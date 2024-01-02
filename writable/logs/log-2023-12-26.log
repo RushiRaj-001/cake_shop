@@ -1,0 +1,10 @@
+CRITICAL - 2023-12-26 04:07:27 --> Invalid file: "page_layout.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('page_layout.php')
+ 2 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('page_layout', [], true)
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('register', [], true)
+ 4 APPPATH\Controllers\Home.php(24): view('register')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->register()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
