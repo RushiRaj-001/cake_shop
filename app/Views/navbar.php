@@ -35,7 +35,7 @@
             </li>
             <!-- dropdown -->
             <li class="nav-item">
-                <a class="nav-link" href="<?= base_url()?>#shop">Shop</a>
+                <a class="nav-link" href="<?= base_url()?>shop">Shop</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">About</a>

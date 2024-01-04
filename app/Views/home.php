@@ -2,104 +2,146 @@
 <?= $this->section('content') ?>
 
 
-<div class="container-fluid m-0 p-0" >
-<div id="carouselExampleCaptions" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="<?= base_url()?>public/Assets/banner.jpg" class="d-block w-100 img-fluid" alt="Banner">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Nutty Bakes</h5>
-       <button class="btn">Order Now</button>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="<?= base_url()?>public/Assets/banner2.jpg" class="d-block w-100 img-fluid" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-      <h5 style="color:#2a2524">Nutty Bakes</h5>
-       <button class="btn">Order Now</button>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="<?= base_url()?>public/Assets/banner3.jpg" class="d-block w-100 img-fluid" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-      <h5>Nutty Bakes</h5>
-       <button class="btn">Order Now</button>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</div>
+<!-- <div class="container-fluid m-0 p-0" >  -->
 
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators $carousel-indicator-transition">
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner img-fluid">
+        <div class="carousel-item active" data-bs-interval="5000">
+            <img src="<?= base_url()?>public/Assets/banner.jpg" class="d-block w-100 h-auto" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+            <img src="<?= base_url()?>public/Assets/banner2.jpg" class="d-block w-100 h-auto" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+            <img src="<?= base_url()?>public/Assets/banner3.jpg" class="d-block w-100 h-auto" alt="...">
+        </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- </div> -->
 
 <!-- product cards -->
-<section id="shop" class="py-5">
-    <h2 class="text-center" style="font-size: 5rem; color:#76453B; ">Cakes</h2>
-    <div class=" px-4 mt-5 mx-5">
-        <div class="row gx-4 gx-lg-5 row-cols-2 column-gap-4 row-cols-md-3 row-cols-xl-4 justify-content-center">
-            <?php foreach($products as $item) : ?>
-            <div class="col mb-5 ">
-                <div class="box row h-100 prod-card">
-                    <!-- Product image-->
-                    <div class="img-size"><img class="card-img-top" src="<?=base_url()?>/public/uploads/<?=$item['prod_image']?>" alt="cake_1" /></div>
-                    
-                    <!-- Product details-->
-                    <div class="card-body p-2">
-                        <div class="text-center">
-                            <!-- Product name-->
-                            <h5 class="fw-bolder">
-                                <?= $item['prod_name']?>
-                            </h5>
-                            <!-- Product price-->
-                            <h5 class="mt-2">Price :
-                                <?= $item['prod_price']?>₹
-                            </h5>
+
+<div class="hero-section mt-5">
+    <h1>Indulge in the Sweet Artistry of Our Cakes</h1>
+    <p>Discover a world of delightful flavors crafted just for you.</p>
+
+    <button class="btn2 mt-4"><a class="text-decoration-none" style="color:#fff;" href="<?= base_url()?>shop">Shop
+            Now</a></button>
+</div>
+
+
+
+
+<div class="container-fluid my-5">
+    <h1 class="text-center fw-bold mb-5 display-6">Our<span class="text-danger"> Special</span></h1>
+    <div class="row">
+        <div class="owl-carousel owl-theme owl-loaded owl-drag">
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="owl-stage-outer">
+                <div class="owl-stage"
+                    style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2376px;">
+                    <div class="owl-item active" style="width: 178px; margin-right: 20px;">
+                        <div class="item">
+                            <img src="<?= base_url()?>public/Assets/cake.jpg" alt="" class="card-img-top">
                         </div>
                     </div>
-                    <div class="mx-auto input_div" style="width:140px; display:none;">
-                    <div  class=" d-flex justify-content-center align-items-center" style=" height: 40px; gap: 5px;" >
-                        <input class="border" type="button" value="+" style="width:35px; height:35px;" onclick="plus()">
-                        <input class="border" type="text" size="25" value="1" style="width:35px; height:35px;">
-                        <input class="border" type="button" value="-"  style="width:35px; height:35px;" onclick="minus()">
+                    <div class="owl-item active" style="width: 178px; margin-right: 20px;">
+                        <div class="item">
+                            <img src="<?= base_url()?>public/Assets/cake.jpg" alt="" class="card-img-top">
+                        </div>
                     </div>
-                        
-            </div>
-                    <!-- Product actions-->
-                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center">
-                        <?php $session=session(); ?>
-                            <?php if($session->loginned=="loginned") { ?>
-                            <a class="btn btn-outline-dark mt-auto addToCartbtn" href="javascript:void(0)"
-                                onclick="addToCart(<?= $item['prod_id']?>,<?= $item['prod_price']?>,
-                                <?= $session->id?>)">Add to cart</a>
-                            <?php } else { ?>
-                            <a  class="btn btn-outline-dark mt-auto "  href="<?= base_url()?>login">Add to cart</a>
-                            <?php } ?>
+                    <div class="owl-item active" style="width: 178px; margin-right: 20px;">
+                        <div class="item">
+                            <img src="<?= base_url()?>public/Assets/cake.jpg" alt="" class="card-img-top">
+                        </div>
                     </div>
+                    <div class="owl-item active" style="width: 178px; margin-right: 20px;">
+                        <div class="item">
+                            <img src="<?= base_url()?>public/Assets/cake.jpg" alt="" class="card-img-top">
+                        </div>
                     </div>
+                    <div class="owl-item active" style="width: 178px; margin-right: 20px;">
+                        <div class="item">
+                            <img src="<?= base_url()?>public/Assets/bg choco.jpg" alt="" class="card-img-top">
+                        </div>
+                    </div>
+                    <div class="owl-item active" style="width: 178px; margin-right: 20px;">
+                        <div class="item">
+                            <img src="<?= base_url()?>public/Assets/o1.png" alt="" class="card-img-top">
+                        </div>
+                    </div>
+                    <div class="owl-item active" style="width: 178px; margin-right: 20px;">
+                        <div class="item">
+                            <img src="<?= base_url()?>public/Assets/o5.png" alt="" class="card-img-top">
+                        </div>
+                    </div>
+                   
                 </div>
             </div>
-
-            <?php endforeach ?>
-
+          
         </div>
     </div>
-
-    
-</section>
+</div>
 
 
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 5
+            }
+        }
+    });
+
+
+</script>
 
 <?= $this->endsection() ?>
