@@ -4,6 +4,7 @@ namespace App\Controllers;
 use App\Models\UserModel;
 use App\Models\Products;
 use App\Models\CartModel;
+use App\Models\Banner;
 
 class Home extends BaseController
 {
@@ -13,6 +14,31 @@ class Home extends BaseController
         $data['products'] = $products->findAll();
         return view('home',$data);
     }
+
+
+
+    public function store()
+{
+    $banner = new Banner();
+    $file1 = $this->request->getFile('offer_banner');
+
+    if ($file1 && $file1->isValid() && !$file1->hasMoved()) {
+        $imageName = $file1->getRandomName();
+        $file1->move('./public/Assets/banner', $imageName);
+
+        $data = [
+            'offer_banner' => $imageName,
+        ];
+
+        $banner->save($data);
+        return redirect()->to('admin_dashboard')->with('status', 'Product Data and Image Upload');
+    } 
+}
+
+
+
+
+
 
     public function shop()
     {

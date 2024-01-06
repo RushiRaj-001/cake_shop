@@ -26,6 +26,7 @@ $routes->post('/register', 'Home::register');
 
 $routes->get('/cart', 'ProductController::cart',['filter' => 'isLogin']);
 
+$routes->post('/banner-store', 'Home::store',['filter' => 'isAdmin']);
 
 $routes->get('/admin_dashboard', 'AdminController::admin_dashboard',['filter' => 'isAdmin']);
 $routes->get('/customer', 'AdminController::customer',['filter' => 'isAdmin']);

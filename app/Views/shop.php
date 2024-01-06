@@ -3,9 +3,10 @@
 
 <div class="container-fluid">
 
-    <div class="grid1">
+    <div class="grid1" >
     <?php foreach($products as $item) : ?>
-        <div class="card1 mt-4 mx-auto">
+        <div class="card1 mt-4 mx-auto" data-aos="fade-up"
+      data-aos-duration="1500">
             <div class="card-img">
                 <img src="<?=base_url()?>/public/uploads/<?=$item['prod_image']?>" alt="">
             </div>
@@ -29,7 +30,7 @@
 </div>
 </div>
 
-
-
 </section>
+
+<?= $this->include("footer") ?>
 <?= $this->endSection() ?>

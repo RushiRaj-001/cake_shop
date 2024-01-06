@@ -52,4 +52,6 @@
         </div>
     </div>
 </section>
+
+<?= $this->include("footer") ?>
 <?= $this->endsection()?>

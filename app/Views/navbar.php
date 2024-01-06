@@ -17,7 +17,7 @@
 // print_r($allcount);         
 ?>
 
-<nav class="navbar navbar-expand-lg mx-auto" id="navbar">
+<nav class="navbar navbar-expand-lg mx-auto " id="navbar">
     <!-- Brand -->
     <a class="navbar-brand" href="#" id="logo"><img src="<?=base_url()?>public/Assets/logo.png" alt=""
             width="50px">Nutty Bake</a>
@@ -33,15 +33,15 @@
             <li class="nav-item">
                 <a class="nav-link" href="<?= base_url('./')?>">Home</a>
             </li>
-            <!-- dropdown -->
-            <li class="nav-item">
+
+            <li class="nav-item  ">
                 <a class="nav-link" href="<?= base_url()?>shop">Shop</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="<?= base_url()?>#about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="<?= base_url()?>#contact">Contact</a>
             </li>
         </ul>
         <div class="icons">
@@ -75,3 +75,20 @@
 </nav>
 
 </div>
+
+
+<!-- <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    var navItems = document.querySelectorAll(".nav-item");
+
+    navItems.forEach(item => {
+        item.addEventListener("click", function () {
+            // Remove "active" class from all nav items
+            navItems.forEach(nav => nav.classList.remove("active"));
+
+            // Add "active" class to the clicked nav item
+            item.classList.add("active");
+        });
+    });
+});
+</script> -->

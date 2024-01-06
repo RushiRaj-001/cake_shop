@@ -21,6 +21,7 @@ class ProductController extends BaseController
     
             return view('dashboard/product',$data);
         }
+        
         public function store()
         {
             $product = new Products();

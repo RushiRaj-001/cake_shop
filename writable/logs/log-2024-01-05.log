@@ -1,0 +1,10 @@
+CRITICAL - 2024-01-05 06:30:30 --> Call to undefined function banner_url()
+in APPPATH\Views\home.php on line 6.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(14): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->home()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

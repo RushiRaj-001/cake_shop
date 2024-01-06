@@ -66,3 +66,7 @@ function removeItem(cartID, prod_id) {
     })
 }
 
+
+
+
+

@@ -49,7 +49,7 @@
                                 <button type="submit" id="remove" class="text-danger form-contorl text-center"
                                 onclick="removeItem(<?= $item['cartID']?>,<?= $item['prod_id']?>)"
                                     style="background-color: Transparent;background-repeat:no-repeat;border: none; cursor:pointer; overflow: hidden; outline:none;"
-                                    fdprocessedid="ywh397"><i class="fa-solid fa-trash-xmark"></i>remove</button>
+                                    fdprocessedid="ywh397"><i class="fa-solid fa-trash"></i></button>
                         
                         </div>
                     </div>
