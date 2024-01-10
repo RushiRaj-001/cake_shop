@@ -1,4 +1,4 @@
-<?= $this->extend('private_layout')?>
+<?= $this->extend('public_layout') ?>
 <?= $this->section('content')?>
 
 

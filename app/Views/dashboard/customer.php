@@ -1,11 +1,11 @@
 <?= $this->extend('private_layout')?>
 <?= $this->section('content')?>
 
-<section class="dasbord_section">
-    <div class="container-fluid">
+<?= $this->include("dashboard/sidebar")?>       
+
+    <div class="container-fluid section">
         <div class="row">
             <div class="col-xl-12 col-md-12 col-12 dasbord_subbox">
-          <?= $this->include("dashboard/sidebar")?>       
                 <div class="right_box">                        
                         <!-- <div class="right_amountbox">
                             <div class="right_txtbox">
@@ -30,7 +30,7 @@
                                 </div>
                                 <h6>100</h6>
                             </div>
-                        </div>
+                            </div>
                             <h4>Total Order</h4>
                                 </div> -->
                     
@@ -41,6 +41,7 @@
                     <thead>
                         <tr>
                             <th>
+                            <i class="fa-solid fa-grid-horizontal"></i>
                                 username
                             </th>
                             <th>
@@ -66,7 +67,7 @@
                     </div>
                 </div>
             </div>
-        </section> 
+     
                
     <!--bootstrap links-->      
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>

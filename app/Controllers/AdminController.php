@@ -7,7 +7,9 @@ class AdminController extends BaseController
 {
     public function admin_dashboard()
     {
-        echo view('dashboard/admin_dashboard');
+        $model= new UserModel();
+        $users= $model->findAll();
+        echo view('dashboard/admin_dashboard',['users'=>$users]);
     }
 
     public function customer()

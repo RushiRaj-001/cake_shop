@@ -14,8 +14,8 @@
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script src="https://kit.fontawesome.com/2c16a6d300.js" crossorigin="anonymous"></script>
+<!-- 
+    <script src="https://kit.fontawesome.com/2c16a6d300.js" crossorigin="anonymous"></script> -->
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <!--google font-->
@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&display=swap" rel="stylesheet">
     <!--css link-->
-    <link rel="stylesheet" href="<?= base_url() ?>public/admincss/style.css">
+    <script src="https://kit.fontawesome.com/6cad138b2c.js" crossorigin="anonymous"></script>
     <!--owl slider link-->
 
   

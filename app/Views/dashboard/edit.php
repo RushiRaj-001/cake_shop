@@ -4,7 +4,7 @@
 
 
 <section class="dasbord_section">
-    <div class="container-fluid">
+    <div class="container mt-5">
         <div class="row">
             <div class="col dasbord_subbox">
                 <?= $this->include("dashboard/sidebar")?>

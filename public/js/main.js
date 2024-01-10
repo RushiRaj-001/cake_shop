@@ -67,6 +67,16 @@ function removeItem(cartID, prod_id) {
 }
 
 
+$(".ticon").click(()=>{
+  $(".menu").css({"left":"0","transition": "0.8s ease-out"});
+  $(".section").css({"transition": "0.8s ease-out","margin":"5% 25%"});
+})
+$(".close-icon").click(()=>{
+    $(".menu").css({"left":"-25%","transition": "0.8s ease-out"});
+    $(".section").css({"transition": "0.8s ease-out","margin":"5% 10%"});
+})
+
+
 
 
 

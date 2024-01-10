@@ -2,13 +2,13 @@
 <?= $this->section('content') ?>
 
 
+<?= $this->include("dashboard/sidebar")?>
 <section class="dasbord_section">
-    <div class="container-fluid">
+    <div class="container-fluid section">
         <div class="row">
             <div class="col dasbord_subbox">
-                <?= $this->include("dashboard/sidebar")?>
 
-    <div class="container mt-4">
+    <div class="container m-0 mt-4">
         <div class="row">
             <div class="col-md-12">
                 <?php 
