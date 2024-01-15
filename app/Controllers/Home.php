@@ -5,6 +5,11 @@ use App\Models\UserModel;
 use App\Models\Products;
 use App\Models\CartModel;
 use App\Models\Banner;
+use Google\Client as Google_Client;
+use Google\Service\Oauth2 as Google_Service_Oauth2;
+
+
+
 
 class Home extends BaseController
 {
@@ -91,6 +96,9 @@ class Home extends BaseController
         }
     
     }
+
+
+
     public function login()
     {
         if ($this->request->getMethod()=="get") {

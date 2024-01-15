@@ -14,6 +14,9 @@ $routes->get('/logout', 'Home::logout');
 
 $routes->get('/shop', 'Home::shop');
 
+
+
+
 $routes->get('/addToCart', 'ProductController::addToCart');
 $routes->post('/addToCart', 'ProductController::addToCart');
 $routes->get('/decrement', 'ProductController::decrement');
@@ -25,6 +28,9 @@ $routes->get('/register', 'Home::register');
 $routes->post('/register', 'Home::register');
 
 $routes->get('/cart', 'ProductController::cart',['filter' => 'isLogin']);
+
+$routes->get('/checkout', 'ProductController::checkout',['filter' => 'isLogin']);
+$routes->post('/checkout', 'ProductController::checkout',['filter' => 'isLogin']);
 
 $routes->post('/banner-store', 'Home::store',['filter' => 'isAdmin']);
 

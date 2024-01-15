@@ -5,6 +5,7 @@
 <?= $this->include("dashboard/sidebar")?>
 <section class="dasbord_section">
     <div class="container-fluid section">
+        
         <div class="row">
             <div class="col dasbord_subbox">
 
@@ -22,6 +23,7 @@
                         <h5>Products
                             <a href="<?= base_url('add_product')?>" class="btn btn-danger btn-sm float-end">Back</a>
                         </h5>
+                        <h2 class="text-center" >Add Product to Shop</h2>
                     </div>
                     <div class="card-body">
                             <table class="table table-bordered">
@@ -38,12 +40,13 @@
                                 <tbody>
                                 <?php foreach($products as $item) : ?>
 
-                                    <tr>
+                                    <tr style="font-size: 25px;text-align:center;">
                                         <td><?= $item['prod_id']?></td>
                                         <td><?= $item['prod_name']?></td>
                                         <td><?= $item['prod_cat']?></td>
-                                        <td>
-                                            <img src="<?=base_url()?>/public/uploads/<?=$item['prod_image']?>" height="100px" width="100px" alt="">
+                                        <td >
+                                            <img style="object-fit: contain;
+                                                    aspect-ratio:3/2;" src="<?=base_url()?>/public/uploads/<?=$item['prod_image']?>" height="100px" width="100px" alt="">
                                         </td>
                                         <td><?= $item['prod_price']?></td>
                                         <td>

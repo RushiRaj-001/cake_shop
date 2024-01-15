@@ -6,15 +6,14 @@
    
     <?= $this->include("dashboard/sidebar")?>
 
-    <div class="container-fluid section" >
+    <div class="container section">
+    <h2 class="text-center" >Add Product to Shop</h2>
     <div class="right_box">
-
-    <div class="card shadow" style="width:70%">
+        
+    <div class="card shadow">
         <div class="card-body p-5">
-
-
             <form action="<?=base_url('product-store')?>" method="post" enctype="multipart/form-data">
-                <div class="row">
+                <div class="row mb-4">
                     <div class="col-md-3">
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="floatingLastnameInput"
@@ -32,7 +31,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mb-4">
                     <div class="col-md-3">
                         <div class="form-floating mb-3">
                             <select class="form-select" id="floatingSelectGrid"
@@ -57,15 +56,15 @@
                     <label for="prod_image" class="form-label">Product image</label>
                     <input class="form-control" type="file" id="formFile" name="prod_image">
                 </div>
-                <div class="mb-2 text-center">
-                    <input type="submit" name="add_product" value="Add" class="btn btn-primary">
+                <div class="mb-2 text-center" >
+                    <input type="submit" style="padding: 6px 20px;" name="add_product" value="Add" class="btn btn-primary">
                 </div>
             </form>
 
         </div>
     </div>
 
-    <div class="card shadow mt-3" style="width:70%">
+    <div class="card shadow mt-3">
         <div class="card-body  p-5">
             <div class="container ">
                 <h2 class="mb-4">Add Offer Banner on Home Page</h2>

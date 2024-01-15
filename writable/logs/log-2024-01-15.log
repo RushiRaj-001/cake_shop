@@ -1,0 +1,23 @@
+CRITICAL - 2024-01-15 10:37:18 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+in APPPATH\Config\Routes.php on line 17.
+ 1 SYSTEMPATH\Router\RouteCollection.php(344): require()
+ 2 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 10:50:00 --> require_once(C:\xampp\htdocs\cake_shop\app\vendor/autoload.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 109.
+ 1 APPPATH\Controllers\Home.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\xampp\\htdocs\\cake_shop\\app\\vendor/autoload.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\cake_shop\\app\\Controllers\\Home.php', 109)
+ 2 APPPATH\Controllers\Home.php(109): require_once()
+ 3 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 10:50:06 --> require_once(C:\xampp\htdocs\cake_shop\app\vendor/autoload.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 109.
+ 1 APPPATH\Controllers\Home.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\xampp\\htdocs\\cake_shop\\app\\vendor/autoload.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\cake_shop\\app\\Controllers\\Home.php', 109)
+ 2 APPPATH\Controllers\Home.php(109): require_once()
+ 3 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()

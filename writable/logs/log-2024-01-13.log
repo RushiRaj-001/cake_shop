@@ -1,0 +1,94 @@
+CRITICAL - 2024-01-13 03:59:04 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\dashboard\cart.php on line 94.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/cart', [], true)
+ 3 APPPATH\Controllers\ProductController.php(175): view('dashboard/cart', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->cart()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 04:02:31 --> Undefined variable $totalItem
+in APPPATH\Views\dashboard\cart.php on line 12.
+ 1 APPPATH\Views\dashboard\cart.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalItem', 'C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\cart.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/cart', [], true)
+ 5 APPPATH\Controllers\ProductController.php(175): view('dashboard/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 06:23:40 --> Undefined array key 0
+in APPPATH\Controllers\ProductController.php on line 211.
+ 1 APPPATH\Controllers\ProductController.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\cake_shop\\app\\Controllers\\ProductController.php', 211)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->decrement()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 06:23:40 --> Undefined array key 0
+in APPPATH\Controllers\ProductController.php on line 211.
+ 1 APPPATH\Controllers\ProductController.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\cake_shop\\app\\Controllers\\ProductController.php', 211)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->decrement()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 06:23:41 --> Undefined array key 0
+in APPPATH\Controllers\ProductController.php on line 211.
+ 1 APPPATH\Controllers\ProductController.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\cake_shop\\app\\Controllers\\ProductController.php', 211)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->decrement()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 06:32:49 --> Undefined array key 0
+in APPPATH\Controllers\ProductController.php on line 211.
+ 1 APPPATH\Controllers\ProductController.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\cake_shop\\app\\Controllers\\ProductController.php', 211)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->decrement()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 06:32:49 --> Undefined array key 0
+in APPPATH\Controllers\ProductController.php on line 211.
+ 1 APPPATH\Controllers\ProductController.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\cake_shop\\app\\Controllers\\ProductController.php', 211)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->decrement()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 06:32:50 --> Undefined array key 0
+in APPPATH\Controllers\ProductController.php on line 211.
+ 1 APPPATH\Controllers\ProductController.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\cake_shop\\app\\Controllers\\ProductController.php', 211)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->decrement()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 06:32:50 --> Undefined array key 0
+in APPPATH\Controllers\ProductController.php on line 211.
+ 1 APPPATH\Controllers\ProductController.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\cake_shop\\app\\Controllers\\ProductController.php', 211)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->decrement()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 06:32:50 --> Undefined array key 0
+in APPPATH\Controllers\ProductController.php on line 211.
+ 1 APPPATH\Controllers\ProductController.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\cake_shop\\app\\Controllers\\ProductController.php', 211)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->decrement()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 06:37:34 --> Undefined array key 0
+in APPPATH\Controllers\ProductController.php on line 211.
+ 1 APPPATH\Controllers\ProductController.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\cake_shop\\app\\Controllers\\ProductController.php', 211)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->decrement()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-13 06:52:00 --> Undefined variable $final_price
+in APPPATH\Views\dashboard\cart.php on line 88.
+ 1 APPPATH\Views\dashboard\cart.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $final_price', 'C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\cart.php', 88)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\cart.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/cart', [], true)
+ 5 APPPATH\Controllers\ProductController.php(195): view('dashboard/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->cart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
