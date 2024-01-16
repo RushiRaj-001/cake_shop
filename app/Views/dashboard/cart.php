@@ -90,7 +90,7 @@
     <?php $session = session(); ?>
     <a
     href="<?= base_url('checkout')?>"
-    onclick="checkout('<?=( $session->  username)?>','<?=( $session->  email)?>')"
+    
     class="btn btn-success btn-block btn-lg text-center my-2 mb-5 text-wrap">Proceed to Buy </a>
 
 </div>

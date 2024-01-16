@@ -129,24 +129,7 @@ $(".close-icon").click(() => {
     $(".section").css({ "transition": "0.8s ease-out", "margin": "5% 10%" });
 })
 
-function checkout(username, email) {
-    $.ajax({
-        url: baseUrl + "checkout",
-        type: "POST",
-        data: { username: username, email: email },
-        beforeSend: function () { },
-        complete: function () {
 
-        },
-        success: function (response) {
-            const Jsondata = JSON.parse(response);
-            // console.log("response", Jsondata);
-
-
-        }
-
-    })
-}
 
 function addAddress() {
     const username = $('#username').val();
@@ -176,11 +159,35 @@ function addAddress() {
 
         },
         success: function (response) {
-            
+
         }
 
     })
 }
+
+
+function proceedToPay() {
+    const paymentMethod = $("input[name='paymentMethod']:checked").val();
+
+    if(paymentMethod==='COD')
+    {
+        $.ajax({
+            url: baseUrl + "proceedToPay",
+            type: "POST",
+            data: { paymentMethod: paymentMethod,},
+            beforeSend: function () { },
+            complete: function () {
+    
+            },
+            success: function (response) {
+             
+            }
+    
+        })
+    }
+
+}
+
 
 
 

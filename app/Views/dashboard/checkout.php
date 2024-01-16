@@ -14,15 +14,15 @@
                 </div>
                 <div class="phone" style="display: flex; align-items: center;">
                     <label for="phone" class="mb-0 form-label font-weight-bold" style="width: 40%;">Phone No. :</label>
-                    <input type="tel" class="form-control" placeholder="Enter Your Phone Number" value=""
-                        id="phone" name="phone" required="">
+                    <input type="tel" class="form-control" placeholder="Enter Your Phone Number" value="" id="phone"
+                        name="phone" required="">
                 </div>
 
             </div>
             <div class="mb-4">
                 <label for="email" class="form-label font-weight-bold">Email Id :</label>
-                <input type="text" class="form-control" value="<?= $email ?>"  id="email" name="email"
-                    required="" readonly="" style="overflow: auto;">
+                <input type="text" class="form-control" value="<?= $email ?>" id="email" name="email" required=""
+                    readonly="" style="overflow: auto;">
 
             </div>
             <div class="mb-4">
@@ -47,23 +47,66 @@
                     <input type="text" class="form-control" placeholder="Enter Your state" value="" id="state"
                         name="state" required="">
                 </div>
- 
+
             </div>
             <?php 
             $final = $totalItemPrice + 40 
             ?>
             <div class="mb-4">
                 <label for="amount" class="form-label font-weight-bold">Total Amount:</label>
-                <input type="number " class="form-control" id="total_price" name="amount" value="<?= $final?>"  required="" readonly="">
+                <input type="number " class="form-control" id="total_price" name="amount" value="<?= $final?>"
+                    required="" readonly="">
             </div>
             <div class="mb-4 text-center">
-                <a href="<?= base_url()?>checkout" onclick="addAddress()" class="btn btn-outline-success w-50 justify-content-center" type="submit">Proceed to
-                    Pay</a>
+                <button type="submit" onclick="addAddress()" class="btn btn-outline-success w-50 justify-content-center" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    Submit Details
+                </button>
             </div>
 
         </form>
     </div>
 
-  
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Payment Mode</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- <div class="shippingAddress">
+                        <?php foreach($shipping as $key => $address) { ?>
+
+                            <label><input type="radio" name="shippingAdress" value="<?php echo $address['id'];?>" ><?php echo $address['username']?></label>
+
+                        <?php }?>
+                    </div> -->
+
+                    <div class="form-check form-check-inline mx-4">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="inlineRadio1"
+                            value="COD" checked>
+                        <label class="form-check-label" for="inlineRadio1" >Cash On Delivery</label>
+                    </div>
+                    <div class="form-check form-check-inline mx-3">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="inlineRadio2"
+                            value="ONLINE">
+                        <label class="form-check-label" for="inlineRadio2">Online</label>
+                    </div> 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="javascript:void(0)" onclick="proceedToPay()" ><button class="btn btn-outline-success" type="button">Proceed to Pay</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </div>
 <?= $this->endSection() ?>

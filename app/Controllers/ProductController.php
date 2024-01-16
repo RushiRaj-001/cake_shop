@@ -291,7 +291,10 @@ class ProductController extends BaseController
             $totalItemPrice += $item['prod_price'] * $item['CartQty'];
         }
 
-        return view('dashboard/checkout', ['username' => $username, 'email' => $email, 'totalItemPrice' => $totalItemPrice ]);
+        $model= new ShippingModel();
+        $shipping= $model->findAll();
+
+        return view('dashboard/checkout', ['username' => $username, 'email' => $email, 'totalItemPrice' => $totalItemPrice , 'shipping'=>$shipping]);
     
 
     }
@@ -321,5 +324,31 @@ class ProductController extends BaseController
             }
         }
         
+    }
+
+    public function proceedToPay()
+    {
+        $products = new Products();
+        $CartModel = new CartModel();
+        $useSessiondata = session()->get();
+
+        if ($this->request->getMethod() == 'post') {
+
+            $products->select('products.prod_id, products.prod_name,products.prod_image,products.prod_price, cart.id as cartID, cart.prod_price, cart.qty as CartQty, cart.user_id , cart.prod_price as CartPrice');
+            $products->where('cart.user_id', $useSessiondata['id']);
+            $products->join('cart', 'cart.prod_id= products.prod_id');
+            $cartItems = $products->findAll();
+
+            $totalItemPrice = 0;
+            foreach ($cartItems as $key => $item) {
+                $totalItemPrice += $item['prod_price'] * $item['CartQty'];
+            }
+
+            $orderID='SHOP_'.rand(0,252222);
+            $orderdata = array(
+                'order_id'=>'',
+                'order_amount'=>'$'
+            );
+        }
     }
 }
