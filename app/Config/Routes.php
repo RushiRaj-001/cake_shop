@@ -32,6 +32,9 @@ $routes->get('/cart', 'ProductController::cart',['filter' => 'isLogin']);
 $routes->get('/checkout', 'ProductController::checkout',['filter' => 'isLogin']);
 $routes->post('/checkout', 'ProductController::checkout',['filter' => 'isLogin']);
 
+$routes->get('/addAddress', 'ProductController::addAddress',['filter' => 'isLogin']);
+$routes->post('/addAddress', 'ProductController::addAddress',['filter' => 'isLogin']);
+
 $routes->post('/banner-store', 'Home::store',['filter' => 'isAdmin']);
 
 $routes->get('/admin_dashboard', 'AdminController::admin_dashboard',['filter' => 'isAdmin']);

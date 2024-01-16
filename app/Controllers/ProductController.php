@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\UserModel;
 use App\Models\Products;
 use App\Models\CartModel;
+use App\Models\ShippingModel;
 
 class ProductController extends BaseController
 {
@@ -295,4 +296,30 @@ class ProductController extends BaseController
 
     }
     
+    public function addAddress(){
+
+        $ShippingModel = new ShippingModel();
+        $userSessionData = session()->get();
+        
+        if ($this->request->getMethod() == 'post') {
+
+            $shippingAddress = array(
+                'username'=> $this->request->getVar('username'),
+                'phone'=> $this->request->getVar('phone'),
+                'email'=> $this->request->getVar('email'),
+                'address'=> $this->request->getVar('address'),
+                'pincode'=> $this->request->getVar('pincode'),
+                'city'=> $this->request->getVar('city'),
+                'state'=> $this->request->getVar('state'),
+                'total_price'=> $this->request->getVar('total_price'),
+                'user_id' => $userSessionData['id']
+            );
+            if($ShippingModel->save($shippingAddress)){
+               
+            }else{
+                echo 2;
+            }
+        }
+        
+    }
 }

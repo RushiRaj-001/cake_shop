@@ -15,7 +15,7 @@ function addToCart(prod_id, prod_price, user_id) {
         success: function (response) {
             const Jsondata = JSON.parse(response);
             console.log("response", Jsondata);
-        
+
             $('#payamount').text(Jsondata.totalItemPrice);
             $('#finalPrice').text(Jsondata.totalItemPrice + 40);
             if (Jsondata.status == "success") {
@@ -140,15 +140,47 @@ function checkout(username, email) {
         },
         success: function (response) {
             const Jsondata = JSON.parse(response);
-            console.log("response", Jsondata);
-            
+            // console.log("response", Jsondata);
 
-            }
+
+        }
 
     })
 }
 
+function addAddress() {
+    const username = $('#username').val();
+    const phone = $('#phone').val();
+    const email = $('#email').val();
+    const address = $('#address').val();
+    const pincode = $('#pincode').val();
+    const city = $('#city').val();
+    const state = $('#state').val();
+    const total_price = $('#total_price').val();
 
+    $.ajax({
+        url: baseUrl + "addAddress",
+        type: "POST",
+        data: {
+            username: username,
+            phone: phone,
+            email: email,
+            address: address,
+            pincode: pincode,
+            city: city,
+            state: state,
+            total_price: total_price
+        },
+        beforeSend: function () { },
+        complete: function () {
+
+        },
+        success: function (response) {
+            
+        }
+
+    })
+}
 
 
 

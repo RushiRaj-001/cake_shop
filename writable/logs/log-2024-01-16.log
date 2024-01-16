@@ -1,0 +1,244 @@
+CRITICAL - 2024-01-16 04:50:16 --> Class "App\Models\ShippingModel" not found
+in APPPATH\Controllers\AdminController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->admin_dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 04:51:25 --> Undefined array key "Address"
+in APPPATH\Views\dashboard\admin_dashboard.php on line 32.
+ 1 APPPATH\Views\dashboard\admin_dashboard.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Address"', 'C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\admin_dashboard.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\admin_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/admin_dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(13): view('dashboard/admin_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->admin_dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 06:26:23 --> Undefined array key "username"
+in APPPATH\Views\dashboard\admin_dashboard.php on line 26.
+ 1 APPPATH\Views\dashboard\admin_dashboard.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\admin_dashboard.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\admin_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/admin_dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(30): view('dashboard/admin_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->admin_dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 06:27:14 --> Undefined array key "username"
+in APPPATH\Views\dashboard\admin_dashboard.php on line 15.
+ 1 APPPATH\Views\dashboard\admin_dashboard.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\admin_dashboard.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\admin_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/admin_dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(30): view('dashboard/admin_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->admin_dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 06:32:02 --> Undefined variable $item
+in APPPATH\Views\dashboard\admin_dashboard.php on line 20.
+ 1 APPPATH\Views\dashboard\admin_dashboard.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\admin_dashboard.php', 20)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\admin_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/admin_dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(30): view('dashboard/admin_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->admin_dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 06:35:04 --> Undefined array key "prod_image"
+in APPPATH\Views\dashboard\admin_dashboard.php on line 20.
+ 1 APPPATH\Views\dashboard\admin_dashboard.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prod_image"', 'C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\admin_dashboard.php', 20)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\admin_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/admin_dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(30): view('dashboard/admin_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->admin_dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 06:39:40 --> Undefined array key "address"
+in APPPATH\Views\dashboard\admin_dashboard.php on line 18.
+ 1 APPPATH\Views\dashboard\admin_dashboard.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "address"', 'C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\admin_dashboard.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\admin_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/admin_dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(28): view('dashboard/admin_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->admin_dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 06:40:20 --> Undefined array key "prod_image"
+in APPPATH\Views\dashboard\admin_dashboard.php on line 23.
+ 1 APPPATH\Views\dashboard\admin_dashboard.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prod_image"', 'C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\admin_dashboard.php', 23)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\admin_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/admin_dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(28): view('dashboard/admin_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->admin_dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 06:41:28 --> Undefined array key "prod_name"
+in APPPATH\Views\dashboard\admin_dashboard.php on line 23.
+ 1 APPPATH\Views\dashboard\admin_dashboard.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prod_name"', 'C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\admin_dashboard.php', 23)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\admin_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/admin_dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(28): view('dashboard/admin_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->admin_dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-16 06:44:15 --> mysqli_sql_exception: Unknown column 'cart.prod_image' in 'field list' in C:\xampp\htdocs\cake_shop\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\cake_shop\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `cart`.`...', 0)
+#1 C:\xampp\htdocs\cake_shop\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.`...')
+#2 C:\xampp\htdocs\cake_shop\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.`...')
+#3 C:\xampp\htdocs\cake_shop\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.`...', Array, false)
+#4 C:\xampp\htdocs\cake_shop\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\cake_shop\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\cake_shop\app\Controllers\AdminController.php(25): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\cake_shop\system\CodeIgniter.php(942): App\Controllers\AdminController->admin_dashboard()
+#8 C:\xampp\htdocs\cake_shop\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\cake_shop\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\cake_shop\index.php(81): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-16 06:44:15 --> Unknown column 'cart.prod_image' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.`id` as `cartID`, `cart`.`prod_price`, `cart`.`prod_image`, `cart`.`prod_name`, `cart`.`qty` as `CartQty`, `cart`.`user_id`, `cart`.`prod_price` as `CartPrice`, `shipping`.`id` as `shippingID`, `shipping`.`username`, `shipping`.`email`, `shipping`.`phone`, `shipping`.`address`, `shipping`.`pincode`, `shipping`.`city`, `shipping`.`state`, `shipping`.`total_price`
+FROM `cart`
+JOIN `shipping` ON `shipping`.`user_id` = `cart`.`user_id`
+JOIN `products` ON `products`.`prod_id` = `cart`.`prod_id`
+WHERE `cart`.`user_id` = :cart.user_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(25): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->admin_dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-16 06:45:00 --> mysqli_sql_exception: Unknown column 'cart.prod_image' in 'field list' in C:\xampp\htdocs\cake_shop\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\cake_shop\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `cart`.`...', 0)
+#1 C:\xampp\htdocs\cake_shop\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.`...')
+#2 C:\xampp\htdocs\cake_shop\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.`...')
+#3 C:\xampp\htdocs\cake_shop\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.`...', Array, false)
+#4 C:\xampp\htdocs\cake_shop\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\cake_shop\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\cake_shop\app\Controllers\AdminController.php(25): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\cake_shop\system\CodeIgniter.php(942): App\Controllers\AdminController->admin_dashboard()
+#8 C:\xampp\htdocs\cake_shop\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\cake_shop\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\cake_shop\index.php(81): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-16 06:45:00 --> Unknown column 'cart.prod_image' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.`id` as `cartID`, `cart`.`prod_price`, `cart`.`prod_image`, `cart`.`prod_name`, `cart`.`qty` as `CartQty`, `cart`.`user_id`, `cart`.`prod_price` as `CartPrice`, `shipping`.`id` as `shippingID`, `shipping`.`username`, `shipping`.`email`, `shipping`.`phone`, `shipping`.`address`, `shipping`.`pincode`, `shipping`.`city`, `shipping`.`state`, `shipping`.`total_price`
+FROM `cart`
+JOIN `shipping` ON `shipping`.`user_id` = `cart`.`user_id`
+JOIN `products` ON `products`.`prod_id` = `cart`.`prod_id`
+WHERE `cart`.`user_id` = :cart.user_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(25): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->admin_dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-16 06:46:31 --> mysqli_sql_exception: Unknown column 'cart.prod_name' in 'field list' in C:\xampp\htdocs\cake_shop\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\cake_shop\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `cart`.`...', 0)
+#1 C:\xampp\htdocs\cake_shop\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.`...')
+#2 C:\xampp\htdocs\cake_shop\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.`...')
+#3 C:\xampp\htdocs\cake_shop\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.`...', Array, false)
+#4 C:\xampp\htdocs\cake_shop\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\cake_shop\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\cake_shop\app\Controllers\AdminController.php(25): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\cake_shop\system\CodeIgniter.php(942): App\Controllers\AdminController->admin_dashboard()
+#8 C:\xampp\htdocs\cake_shop\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\cake_shop\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\cake_shop\index.php(81): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-16 06:46:31 --> Unknown column 'cart.prod_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.`id` as `cartID`, `cart`.`prod_price`, `products`.`prod_image`, `cart`.`prod_name`, `cart`.`qty` as `CartQty`, `cart`.`user_id`, `cart`.`prod_price` as `CartPrice`, `shipping`.`id` as `shippingID`, `shipping`.`username`, `shipping`.`email`, `shipping`.`phone`, `shipping`.`address`, `shipping`.`pincode`, `shipping`.`city`, `shipping`.`state`, `shipping`.`total_price`
+FROM `cart`
+JOIN `shipping` ON `shipping`.`user_id` = `cart`.`user_id`
+JOIN `products` ON `products`.`prod_id` = `cart`.`prod_id`
+WHERE `cart`.`user_id` = :cart.user_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(25): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->admin_dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 06:51:50 --> Undefined array key "prod_image"
+in APPPATH\Views\dashboard\admin_dashboard.php on line 27.
+ 1 APPPATH\Views\dashboard\admin_dashboard.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prod_image"', 'C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\admin_dashboard.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\admin_dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/admin_dashboard', [], true)
+ 5 APPPATH\Controllers\AdminController.php(13): view('dashboard/admin_dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->admin_dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 06:59:12 --> Undefined variable $item
+in APPPATH\Views\dashboard\checkout.php on line 8.
+ 1 APPPATH\Views\dashboard\checkout.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\checkout.php', 8)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\checkout.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/checkout', [], true)
+ 5 APPPATH\Controllers\ProductController.php(294): view('dashboard/checkout', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->checkout()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 07:01:08 --> Undefined variable $cartItems
+in APPPATH\Views\dashboard\checkout.php on line 9.
+ 1 APPPATH\Views\dashboard\checkout.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cartItems', 'C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\checkout.php', 9)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\checkout.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/checkout', [], true)
+ 5 APPPATH\Controllers\ProductController.php(297): view('dashboard/checkout', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->checkout()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 07:02:31 --> Undefined variable $cartItems
+in APPPATH\Views\dashboard\checkout.php on line 9.
+ 1 APPPATH\Views\dashboard\checkout.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cartItems', 'C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\checkout.php', 9)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\checkout.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/checkout', [], true)
+ 5 APPPATH\Controllers\ProductController.php(297): view('dashboard/checkout', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->checkout()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 07:04:23 --> Undefined variable $cartItems
+in APPPATH\Views\dashboard\checkout.php on line 9.
+ 1 APPPATH\Views\dashboard\checkout.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cartItems', 'C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\checkout.php', 9)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\checkout.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/checkout', [], true)
+ 5 APPPATH\Controllers\ProductController.php(298): view('dashboard/checkout', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->checkout()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 07:08:51 --> Undefined variable $name
+in APPPATH\Views\dashboard\checkout.php on line 7.
+ 1 APPPATH\Views\dashboard\checkout.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\checkout.php', 7)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\cake_shop\\app\\Views\\dashboard\\checkout.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/checkout', [], true)
+ 5 APPPATH\Controllers\ProductController.php(295): view('dashboard/checkout', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->checkout()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(81): CodeIgniter\CodeIgniter->run()

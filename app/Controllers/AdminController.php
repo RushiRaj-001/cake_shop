@@ -2,14 +2,15 @@
 
 namespace App\Controllers;
 use App\Models\UserModel;
+use App\Models\ShippingModel;
 
 class AdminController extends BaseController
 {
     public function admin_dashboard()
     {
-        $model= new UserModel();
-        $users= $model->findAll();
-        echo view('dashboard/admin_dashboard',['users'=>$users]);
+        $model= new ShippingModel();
+        $shipping= $model->findAll();
+        echo view('dashboard/admin_dashboard',['shipping'=>$shipping]);
     }
 
     public function customer()

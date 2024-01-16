@@ -8,8 +8,8 @@
     $totalItemPrice = 0;
     foreach ($cartItems as $key => $item) {
         $totalItemPrice += $item['prod_price'] * $item['CartQty'];
-        $final_price = $totalItemPrice + 40; 
-    ?>
+     ?>
+       
         <div id="productRow_<?= $item['prod_id'] ?>" class="container-fluid text-dark my-3 px-3 py-3  shadow text-black text-center" style="width:80%; border-radius: 15px; padding-left:5x; padding-right:15px; background: aliceblue;">
 
 
@@ -84,7 +84,7 @@
     <h5 class="">Plan Discount<span style="float: right; color:green">
             0%</span></h5>
     <h5 class=" ">Delivery Charges<span style="float: right;"> 40₹ </span></h5>
-    <hr>
+    <?php  $final_price = $totalItemPrice + 40; ?>
     <h4 class=" ">Total Amount : <span style="float: right;"><span id="finalPrice"> <?php echo $final_price ?></span> ₹</span></h4>
 
     <?php $session = session(); ?>

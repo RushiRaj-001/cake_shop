@@ -12,8 +12,6 @@
 }
 body {
   background: whitesmoke;
-  
-
 }
 body::-webkit-scrollbar {
   display: none;
@@ -457,8 +455,7 @@ body::-webkit-scrollbar {
   justify-content: flex-start;
 }
 
-
-.menu ul li a { 
+.menu ul li a {
   font-size: x-large;
   display: block;
   text-decoration: none;
@@ -483,6 +480,7 @@ body::-webkit-scrollbar {
 
 .icon {
   font-size: 25px;
-  margin:0 15px;
- 
+  margin: 0 15px;
 }
+
+/* --------------admin--------- */

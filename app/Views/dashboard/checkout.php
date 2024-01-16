@@ -54,11 +54,11 @@
             ?>
             <div class="mb-4">
                 <label for="amount" class="form-label font-weight-bold">Total Amount:</label>
-                <input type="number " class="form-control" id="checkPrice" name="amount" value="<?= $final?>"  required="" readonly="">
+                <input type="number " class="form-control" id="total_price" name="amount" value="<?= $final?>"  required="" readonly="">
             </div>
             <div class="mb-4 text-center">
-                <button class="btn btn-outline-success w-50 justify-content-center" type="submit">Proceed to
-                    Pay</button>
+                <a href="<?= base_url()?>checkout" onclick="addAddress()" class="btn btn-outline-success w-50 justify-content-center" type="submit">Proceed to
+                    Pay</a>
             </div>
 
         </form>
