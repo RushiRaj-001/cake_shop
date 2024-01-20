@@ -1,19 +1,18 @@
-<?php 
+<?php
 
-    use App\Models\CartModel;
-    $CartModel = new CartModel();
-    
-    $session=session(); 
-    $data = $session->get();
-   $allcount=0;
-    if(@$data['loginned']) {
-        
-    $user_id = $data['id'];
-    $allcount = $CartModel->where('user_id', $user_id)->countAllResults();
+use App\Models\CartModel;
 
-} 
-        
+$cartModel = new CartModel();
+$session = session();
+$allcount = 0;
+
+if ($session->loginned) {
+    $user_id = $session->id;
+    $allcount = $cartModel->where('user_id', $user_id)->countAllResults();
+}
+
 ?>
+
 
 <nav class="navbar navbar-expand-lg mx-auto " id="navbar">
     <!-- Brand -->
@@ -58,16 +57,27 @@
 
 </button>
 
-            <?php $session = session(); ?>
-            <?php if($session -> loginned == "loginned"): ?>
-            <a style="color:#c69328; text-decoration:none; margin-left:10px;" href="<?= base_url()?>logout"> Logout</a>
-            <a style="color:#c69328; text-decoration:none; margin-left:10px;" href="<?= base_url()?><?=$session->user_type == "admin" ? "admin_dashboard" : ""?>">
-                <?=ucfirst( $session->  username)?></a>
-            <?php else: ?>
-            <a style="color:#c69328; text-decoration:none; margin-left:10px;" href="<?= base_url()?>login"><i class="fa-solid fa-user"></i> Login</a>
-        </div>
+<?php $session = session(); ?>
+<div>
+    <?php if ($session->loginned): ?>
+        <?php if (isset($session->loginned['oauth_id']) && $session->loginned['oauth_id']): ?>
+            <!-- Display Google username when logged in with Google -->
+            <span style="color:#c69328; margin-left:10px;"><?= ucfirst($session->loginned['username'] ?? '') ?></span>
+        <?php else: ?>
+            <!-- Display regular user username when logged in -->
+            <span style="color:#c69328; margin-left:10px;"> <?=ucfirst( $session->  username)?></span>
         <?php endif ?>
-    </div>
+        <a style="color:#c69328; text-decoration:none; margin-left:10px;" href="<?= base_url('logout') ?>">Logout</a>
+    <?php else: ?>
+        <a style="color:#c69328; text-decoration:none; margin-left:10px;" href="<?= base_url('login') ?>">
+            <i class="fa-solid fa-user"></i> Login</a>
+    <?php endif ?>
+</div>
+
+
+
+</div>
+
 
 </nav>
 

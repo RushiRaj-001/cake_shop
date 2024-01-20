@@ -14,7 +14,8 @@ function addToCart(prod_id, prod_price, user_id) {
         },
         success: function (response) {
             const Jsondata = JSON.parse(response);
-            console.log("response", Jsondata);
+            // console.log("response", Jsondata);
+            // alert(response);
 
             $('#payamount').text(Jsondata.totalItemPrice);
             $('#finalPrice').text(Jsondata.totalItemPrice + 40);

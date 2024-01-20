@@ -8,9 +8,9 @@ class AdminController extends BaseController
 {
     public function admin_dashboard()
     {
-        $model= new ShippingModel();
-        $shipping= $model->findAll();
-        echo view('dashboard/admin_dashboard',['shipping'=>$shipping]);
+        // $model= new ShippingModel();
+        // $shipping= $model->findAll();
+        echo view('dashboard/admin_dashboard');
     }
 
     public function customer()

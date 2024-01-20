@@ -34,11 +34,15 @@
                             </div>
 
                         </form>
+                
 						<br>
 						<span>Don't have Account ,</span>
 						<a href="<?= base_url() ?>register">Register</a>
                     </div>
                 </div>
+                <?php if (isset($loginButton)) : ?>
+                     <a href="<?= $loginButton; ?>"><img src="<?= base_url() ?>/public/Assets/googlebtn.png" width="60%" alt="button"></a>
+             <?php endif; ?>
             </div>
         </div>
     </div>

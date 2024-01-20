@@ -14,17 +14,22 @@
             <div class="price"><?= $item['prod_price']?>₹</div>
 
             <div class="card-footer pt-3 border-top-0 bg-transparent">
-                        <div class="text-center">
-                        <?php $session=session(); ?>
-                            <?php if($session->loginned=="loginned") { ?>
-                            <a class="btn2 btn-outline-dark mt-auto addToCartbtn"  href="javascript:void(0)"
-                                onclick="addToCart(<?= $item['prod_id']?>,<?= $item['prod_price']?>,
-                                <?= $session->id?>)">Add to cart</a>
-                            <?php } else { ?>
-                            <a  class="btn2 btn-outline-dark mt-auto " style="text-decoration: none;"  href="<?= base_url()?>login">Add to cart</a>
-                            <?php } ?>
-                    </div>
-                    </div>
+    <div class="text-center">
+        <?php $session = session(); ?>
+        <?php if ($session->loginned): ?>
+            <!-- User is logged in, display the Add to cart button -->
+            <a class="btn2 btn-outline-dark mt-auto addToCartbtn" href="javascript:void(0)"
+                onclick="addToCart(<?= $item['prod_id'] ?>, <?= $item['prod_price'] ?>, <?= $session->id ?>)">
+                Add to cart
+            </a>
+        <?php else: ?>
+            <!-- User is not logged in, provide a link to the login page -->
+            <a class="btn2 btn-outline-dark mt-auto" style="text-decoration: none;" href="<?= base_url() ?>login">
+                Add to cart
+            </a>
+        <?php endif ?>
+    </div>
+</div>
         </div>
         <?php endforeach ?>
 </div>

@@ -173,10 +173,9 @@ class ProductController extends BaseController
             echo json_encode($returnarr);
         }
     }
-
     public function cart()
     {
-
+       
         $useSessiondata = session()->get();
         $data = [];
 
@@ -196,7 +195,7 @@ class ProductController extends BaseController
         $data['main_content'] = 'cart';
         return view('dashboard/cart', $data);
     }
-
+    
     public function  decrement()
     {
         $CartModel = new CartModel();
