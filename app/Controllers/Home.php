@@ -135,7 +135,8 @@ class Home extends BaseController
                 // Convert the user data to an array
                 $googleUserData = json_decode(json_encode($userData), true);
         
-             
+                
+               
         
                 if ($this->userModel->google_user_exists($googleUserData['id'])) {
                     $updateData = [
@@ -146,7 +147,23 @@ class Home extends BaseController
                         
                     ];
                     $this->userModel->updateGoogleUser($updateData, $googleUserData['id']);
-                    session()->set("loginned", $updateData);
+                    $model = new UserModel();
+                    $record = $model->where("email", $googleUserData['email'])
+                        ->first();
+                    
+                    // session()->set('access_token', $token['access_token']);
+                    $sess_data = [
+                        "id" => $record["id"],
+                        "username" => $record["username"],
+                        "email" => $record["email"],
+                        "user_type" => $record["user_type"],
+                        "loginned"=>"loginned"
+                        
+                    ];
+                    // session()->set("loginned", $sess_data);
+                    $session->set($sess_data);
+                    return redirect()->to(base_url());
+
                 } else {
                     $newUserData = [
                         'oauth_id' =>$googleUserData['id'],
@@ -156,17 +173,32 @@ class Home extends BaseController
                        
                     ];
                     $this->userModel->createGoogleUser($newUserData);
-                    session()->set("loginned", $newUserData);
-                    return redirect()->back()->withInput();
+
+                    $model = new UserModel();
+                    $record = $model->where("email", $googleUserData['email'])
+                        ->first();
+                    
+
+                    $sess_data = [
+                        "id" => $record["id"],
+                        "username" => $record["username"],
+                        "email" => $record["email"],
+                        "user_type" => $record["user_type"],
+                        "loginned"=>"loginned"
+                        
+                    ];
+                    $session->set($sess_data);
+                    
+                    return redirect()->to(base_url());
                 }
             }
         }
         
     
-        // Handle site login
-// Handle site login
 if ($this->request->getMethod() == "post") {
     // Validate
+
+   
     if ($this->validate([
         "email" => "required|valid_email",
         "password" => "required",
@@ -177,6 +209,8 @@ if ($this->request->getMethod() == "post") {
             ->first();
 
         $session = session();
+        
+        print_r($record);
         if (!is_null($record)) {
             // Data found in the database
             $sess_data = [
@@ -198,12 +232,14 @@ if ($this->request->getMethod() == "post") {
             }
 
             return redirect()->to(base_url($url));
+            return redirect()->back()->withInput();
         } else {
             $session->set("failed_message", "Record does not match, try again");
             $session->markAsFlashdata('failed_message');
             return redirect()->back()->withInput();
         }
     } else {
+       
         return redirect()->back()->withInput();
     }
 }

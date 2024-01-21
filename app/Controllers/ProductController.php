@@ -109,13 +109,13 @@ class ProductController extends BaseController
             $returnarr = array();
 
             $prod_id = $this->request->getVar('prod_id');
-            $user_id = $this->request->getVar('user_id');
+            $user_id = $useSessiondata['id'];
 
             $data = array(
                 'prod_id' => $this->request->getVar('prod_id'),
                 'qty' => 1,
                 'prod_price' => $this->request->getVar('prod_price'),
-                'user_id' => $this->request->getVar('user_id'),
+                'user_id' => $useSessiondata['id'],
             );
 
             $product = $CartModel->where('prod_id', $prod_id)->where('user_id', $user_id)->findAll();

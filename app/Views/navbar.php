@@ -83,19 +83,3 @@ if ($session->loginned) {
 
 </div>
 
-
-<!-- <script>
-    document.addEventListener("DOMContentLoaded", function () {
-    var navItems = document.querySelectorAll(".nav-item");
-
-    navItems.forEach(item => {
-        item.addEventListener("click", function () {
-            // Remove "active" class from all nav items
-            navItems.forEach(nav => nav.classList.remove("active"));
-
-            // Add "active" class to the clicked nav item
-            item.classList.add("active");
-        });
-    });
-});
-</script> -->
